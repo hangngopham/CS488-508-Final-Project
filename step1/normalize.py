@@ -46,7 +46,7 @@ def normalize(input_filename, output_filename):
                     skip_attribute_name = 0;
                     output_file.write(element + ",");
                 else:
-                    new_element = int(element);
+                    new_element = float(element);
                     #Perform normalization; change new_element if it's <20 or >16000
                     if new_element < 20:
                         new_element = 20;
