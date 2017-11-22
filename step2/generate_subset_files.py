@@ -46,6 +46,7 @@ def add_next_gene(class_file, subset_collection):
     if gene_name not in subset_collection:
         subset_collection.append(gene_name);
 
+#Function that will generate a pp5i_train.topN.gr.csv file containing the top N genes from each of the T-value files.
 def generate_subset_file(input_filename,output_filename,N,MED_filename,EPD_filename,MGL_filename,RHB_filename,JPA_filename):
     input_file = open(input_filename,"r");
     output_file = open(output_filename,"w");
