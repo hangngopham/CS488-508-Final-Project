@@ -6,13 +6,13 @@
 #       Ian Goetting
 #
 #Description:
-#       This file will create pp5i_train.topN.gr.csv files where N = 2,4,6,8,10,12,15,20,25,30.
+#       This program will create pp5i_train.topN.gr.csv files where N = 2,4,6,8,10,12,15,20,25,30.
 #       pp5i_train.topN.gr.csv will contain the top N genes (sorted by T-value desc) found in the five class files for MED, EPD, MGL, RHB, and JPA.
 #       Duplicate genes found in one or more of the class files will only be added ONCE to pp5i_train.topN.gr.csv.
 #       If there are no duplicates in the top N genes in each of the class files, the total amount of genes in pp5i_train.topN.gr.csv will be 5 * N.
 #
 #Input:
-#       This file takes 6 inputs: The input filename, the T-value MED filename, the T-value EPD filename, the T-value MGL filename, the T-value RHB filename, and the T-value JPA filename.
+#       This program takes 6 inputs: The input filename, the T-value MED filename, the T-value EPD filename, the T-value MGL filename, the T-value RHB filename, and the T-value JPA filename.
 #       It is expected that the input filename is pp5i_train_removed.gr.csv. That is, the file generated from removed_fold_diff.py.
 #       The expected inputs for the T-value filenames are the name of the files generated from compute_T_values.py.
 #
