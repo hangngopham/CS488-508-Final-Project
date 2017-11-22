@@ -1,6 +1,32 @@
+#
+#Filename:
+#       compute_T_values.py
+#
+#Author:
+#       Ian Goetting
+#
+#Description:
+#       This program will calculate the T-value of each gene (given in the input file) with respect to each of the five classes: MED, MGL, RHB, EPD, and JPA.
+#       For each class, the genes and their corresponding T-values will be written to a file for record keeping. 
+#       This is done so that the results can be sorted and retrieved in later steps.
+#
+#Input:
+#       The only input this program takes is the input filename via a command line arg. 
+#       The expected input for this program is pp5i_train_removed.gr.csv
+#
+#Output:
+#       Five files containing the T-values for each gene with respect to a class will be outputted.
+#       These files are: T_values_MED.txt, T_values_MGL.txt, T_values_RHB.txt, T_values_EPD.txt, and T_values_JPA.txt
+#
+#Other Notes:
+#       This program does not sort the T_values of the genes for the output files. Sorting must be done outside this program.
+#
+
+
 import sys;
 import math;
 import string;
+
 #Setup a list with the class_labels.
 #Order of the list is determined by the file pp5i_train_class.txt
 class_labels = [];
@@ -10,22 +36,26 @@ for i in range(0,7): class_labels.append("RHB");
 for i in range(0,10): class_labels.append("EPD");
 for i in range(0,6): class_labels.append("JPA");
 
+#Function that computes the average
 #Average computed as: Sum_val/N
 def average(Sum_val,N):
     Sum_val = float(Sum_val); N = float(N);
     return Sum_val/N;
 
+#Function that computes the standard deviation
 #Standard Deviation computed as: sqrt((N*Sum_sq - Sum_val*Sum_val)/(N*(N-1)))
 def standard_deviation(N,Sum_val,Sum_sq):
     N = float(N); Sum_val = float(Sum_val); Sum_sq = float(Sum_sq);
     return math.sqrt((N*Sum_sq - Sum_val*Sum_val)/(N*(N-1)));        
 
+#Function that computes the T_value
 #T_value computed as: (Avg1 - Avg2) / sqrt(Stdev1 * Stdev1/N1 + Stdev2*Stdev2/N2)
 #Absolute value is applied to the computed T_value for the final result
 def T_value(Avg1,Avg2,Stdev1,Stdev2,N1,N2):
     Avg1 = float(Avg1); Avg2 = float(Avg2); Stdev1 = float(Stdev1); Stdev2 = float(Stdev2); N1 = float(N1); N2 = float(N2);
     return abs((Avg1 - Avg2) / math.sqrt(Stdev1 * Stdev1/N1 + Stdev2 * Stdev2/N2));
 
+#Function that will compute the T-value of every gene in the input_file with respect to the target_class.
 def compute_T_values(input_filename, output_filename, target_class):
     input_file = open(input_filename, "r");
     output_file = open(output_filename, "w");
