@@ -16,3 +16,25 @@ mv MGL_sort.txt T_values_MGL.txt;
 mv RHB_sort.txt T_values_RHB.txt;
 #Generate the pp5i_train.topN.gr.csv files
 python generate_subset_files.py pp5i_train_removed.gr.csv T_values_MED.txt T_values_EPD.txt T_values_MGL.txt T_values_RHB.txt T_values_JPA.txt;
+#Transpose the pp5i_train.topN.gr.csv files
+python transpose.py pp5i_train.top2.gr.csv out.txt;
+mv out.txt pp5i_train.top2.gr.csv;
+python transpose.py pp5i_train.top4.gr.csv out.txt;
+mv out.txt pp5i_train.top4.gr.csv;
+python transpose.py pp5i_train.top6.gr.csv out.txt;
+mv out.txt pp5i_train.top6.gr.csv;
+python transpose.py pp5i_train.top8.gr.csv out.txt;
+mv out.txt pp5i_train.top8.gr.csv;
+python transpose.py pp5i_train.top10.gr.csv out.txt;
+mv out.txt pp5i_train.top10.gr.csv;
+python transpose.py pp5i_train.top12.gr.csv out.txt;
+mv out.txt pp5i_train.top12.gr.csv;
+python transpose.py pp5i_train.top15.gr.csv out.txt;
+mv out.txt pp5i_train.top15.gr.csv;
+python transpose.py pp5i_train.top20.gr.csv out.txt;
+mv out.txt pp5i_train.top20.gr.csv;
+python transpose.py pp5i_train.top25.gr.csv out.txt;
+mv out.txt pp5i_train.top25.gr.csv;
+python transpose.py pp5i_train.top30.gr.csv out.txt;
+mv out.txt pp5i_train.top30.gr.csv;
+
