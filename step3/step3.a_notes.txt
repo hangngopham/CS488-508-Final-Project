@@ -1,10 +1,9 @@
-This file contains notes/observations found when using the Weka classifiers for step 3.
-
-Step 3.a:
+This file contains notes/observations found when using the Weka classifiers for step 3.a
 
 Below are the accuracies found for each topN file when the listed classifier is used. 
 All of these accuracies were reported from within Weka.
 I chose OneR to be the Weka classifier of my choice.
+Note that the "Use training set" option was picked to generate these accuracies, NOT cross validation.
 
     NaiveBayes:
         N | Accuracy
