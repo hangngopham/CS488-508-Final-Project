@@ -1,3 +1,12 @@
+#!/bin/bash
+#
+#Description: 
+#       Script that performs the selection of top genes for step 2 of the project.
+#
+#IMPORTANT: 
+#       This script requires the pp5i_train_removed.gr.csv file generated from step1 of the project.
+#       That file can be found in the step1 folder after running the run.sh script found in that folder.
+
 #Remove genes that have fold difference <2
 python remove_fold_diff.py pp5i_train.gr.csv out.txt;
 mv out.txt pp5i_train_removed.gr.csv;

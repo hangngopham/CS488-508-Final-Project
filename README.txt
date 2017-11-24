@@ -5,9 +5,13 @@ CS488/508 Data Mining Final Project Files
 Progress:
     Finished Step 1
     Finished Step 2, final files are in the step2_result_files folder
-    Started Step 3, added stats for step 3.b in step3 folder
+    Finished Step 3, bestN.csv files can be generated using ./run.sh 15 in the step3 folder.
 
 Notes:
+
+    Each of the step folders has a run file that will automate the commands.
+    Use these for each step, although keep in mind the requirements listed in the comments inside the scripts.
+
     The normalized train file generated via normalize.py from step 1,
     is used with the python code and scripts found in step2. 
     In this project's current form, the generated files from step 1 must be
