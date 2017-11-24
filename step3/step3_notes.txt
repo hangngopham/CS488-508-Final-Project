@@ -1,0 +1,98 @@
+This file contains notes/observations found when using the Weka classifiers for step 3.
+
+Step 3.a:
+
+Below are the accuracies found for each topN file when the listed classifier is used. 
+All of these accuracies were reported from within Weka.
+I chose OneR to be the Weka classifier of my choice.
+
+    NaiveBayes:
+        N | Accuracy
+        2 | 98.5507%
+        4 | 98.5507%
+        6 | 98.5507%
+        8 | 98.5507%
+       10 | 100%
+       12 | 100%
+       15 | 100%
+       20 | 100%
+       25 | 100%
+       30 | 100%
+
+    J48:
+        N | Accuracy
+        2 | 98.5507%
+        4 | 100%
+        6 | 100%
+        8 | 97.1014%
+       10 | 100%
+       12 | 100%
+       15 | 100%
+       20 | 100%
+       25 | 100%
+       30 | 100%
+
+    IB1:
+        N | Accuracy
+        2 | 100%
+        4 | 100%
+        6 | 100%
+        8 | 100%
+       10 | 100%
+       12 | 100%
+       15 | 100%
+       20 | 100%
+       25 | 100%
+       30 | 100%
+
+    IBk where K = 2:
+        N | Accuracy
+        2 | 97.1014%
+        4 | 100%
+        6 | 100%
+        8 | 100%
+       10 | 100%
+       12 | 100%
+       15 | 100%
+       20 | 100%
+       25 | 100%
+       30 | 100%
+
+    IBk where K = 3:
+        N | Accuracy
+        2 | 97.1014%
+        4 | 97.1014%
+        6 | 98.5507%
+        8 | 98.5507%
+       10 | 98.5507%
+       12 | 98.5507%
+       15 | 98.5507%
+       20 | 98.5507%
+       25 | 98.5507%
+       30 | 98.5507%
+
+    IBk where K = 4:
+        N | Accuracy
+        2 | 97.1014%
+        4 | 98.5507%
+        6 | 98.5507%
+        8 | 98.5507%
+       10 | 98.5507%
+       12 | 98.5507%
+       15 | 98.5507%
+       20 | 98.5507%
+       25 | 98.5507%
+       30 | 100%
+
+    OneR:
+        N | Accuracy
+        2 | 72.4638%
+        4 | 72.4638%
+        6 | 73.913%
+        8 | 73.913%
+       10 | 75.3623%
+       12 | 75.3623%
+       15 | 75.3623%
+       20 | 75.3623%
+       25 | 75.3623%
+       30 | 75.3623%
