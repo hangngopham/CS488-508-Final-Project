@@ -6,7 +6,7 @@ Progress:
     Finished Step 1
     Finished Step 2, final files are in the step2_result_files folder
     Finished Step 3, bestN.csv files can be generated using ./run.sh 15 in the step3 folder.
-    Started Step 4, completed step 4.a, changed class entry for test.
+    Finished Step 4, final predictions found in predictions.csv. These predictions are for top15 on IBk where K = 4.
 
 Notes:
 

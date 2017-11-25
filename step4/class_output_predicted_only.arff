@@ -1,0 +1,28 @@
+@relation 'pp5i_train.best15_predicted-weka.filters.unsupervised.attribute.Remove-R1-76,78'
+
+@attribute 'predicted Class' {MED,MGL,RHB,EPD,JPA}
+
+@data
+MGL
+EPD
+MED
+MED
+EPD
+MED
+MED
+MED
+EPD
+JPA
+JPA
+MED
+MED
+MED
+MED
+MED
+MGL
+MED
+MED
+RHB
+RHB
+MED
+MGL
