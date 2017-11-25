@@ -6,7 +6,7 @@ Progress:
     Finished Step 1
     Finished Step 2, final files are in the step2_result_files folder
     Finished Step 3, bestN.csv files can be generated using ./run.sh 15 in the step3 folder.
-    Finished Step 4, predictions found in predictions.csv. These predictions are for top15 on IBk where K = 4.
+    Finished Step 4, predictions found in step4/predictions.csv. These predictions are for top15 on IBk where K = 4.
 
 Notes:
 
