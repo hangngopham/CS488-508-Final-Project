@@ -1,4 +1,4 @@
-@relation pp5i_train.top12.gr
+@relation pp5i_train.best12
 
 @attribute D00763_at numeric
 @attribute D14043_at numeric

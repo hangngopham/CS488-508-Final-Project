@@ -50,10 +50,9 @@ def standard_deviation(N,Sum_val,Sum_sq):
 
 #Function that computes the T_value
 #T_value computed as: (Avg1 - Avg2) / sqrt(Stdev1 * Stdev1/N1 + Stdev2*Stdev2/N2)
-#Absolute value is applied to the computed T_value for the final result
 def T_value(Avg1,Avg2,Stdev1,Stdev2,N1,N2):
     Avg1 = float(Avg1); Avg2 = float(Avg2); Stdev1 = float(Stdev1); Stdev2 = float(Stdev2); N1 = float(N1); N2 = float(N2);
-    return abs((Avg1 - Avg2) / math.sqrt(Stdev1 * Stdev1/N1 + Stdev2 * Stdev2/N2));
+    return (Avg1 - Avg2) / math.sqrt(Stdev1 * Stdev1/N1 + Stdev2 * Stdev2/N2);
 
 #Function that will compute the T-value of every gene in the input_file with respect to the target_class.
 def compute_T_values(input_filename, output_filename, target_class):

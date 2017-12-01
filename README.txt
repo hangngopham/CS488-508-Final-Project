@@ -6,7 +6,7 @@ Progress:
     Finished Step 1
     Finished Step 2, final files are in the step2_result_files folder
     Finished Step 3, bestN.csv files can be generated using ./run.sh 15 in the step3 folder.
-    Finished Step 4, predictions found in step4/predictions.csv. These predictions are for top15 on IBk where K = 4.
+    Finished Step 4, predictions found in step4/predictions.csv. These predictions are for top12 on IBk where K = 4.
 
 Notes:
 
@@ -22,5 +22,8 @@ Notes:
     step2_result_files folder, however recreation of the files should keep these
     notes in mind.
 
-    Based on the data calculated for step3.b, the best gene set is N=15 w/ model IBk where K = 4.
+    Based on the data calculated for step3.b, the best gene set is N=12 w/ model IBk where K = 4.
     No optimizations were made to the model (may want to work with this).
+
+    Update: Absolute value has been removed from the calculation of the T value.
+    This has changed the best gene set. Previously it was N = 15 w/ model IBk where K = 4.
