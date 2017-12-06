@@ -27,3 +27,16 @@ Notes:
 
     Update: Absolute value has been removed from the calculation of the T value.
     This has changed the best gene set. Previously it was N = 15 w/ model IBk where K = 4.
+    Update: Added naivebayes predictions in step4/naivebayes/predictions.csv
+    The top25 genes were chosen as the gene set. 
+    In comparison to the predictions made for IBk (k = 4) on top12,
+    the following gene predictions differed (listed by prediction numbers 1-23): 1,10,17,21,23.
+
+    Added j48 predictions in step4/j48/predictions.csv
+    The top8 genes were chosen as the gene set.
+    Surprisingly, setting reducedErrorPruning = true and binarySplits = False gave error rate 18.8406%, worse than original.
+    Setting reducedErrorPruning = T, binarySplits = T gave error rate 18.8406%
+    Setting reducedErrorPruning = F, binarySplits = T gave error rate 11.5942%, same as the original.
+    Therefore, default settings were used for generating the predictions
+    In comparison to the predictions made for IBk (k = 4) on top12,
+    the following gene predictions differed (listed by prediction numbers 1-23): 5,17,23.
